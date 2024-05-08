@@ -80,7 +80,7 @@
         </div>
         <div class="stat">
             <div class="stat-title">Tests duration</div>
-            <div class="stat-value">10 milliseconds</div>
+            <div class="stat-value">4 milliseconds</div>
         </div>
         <div class="stat">
             <div class="stat-title">Platforms used</div>
@@ -110,7 +110,7 @@
         </div>
     </div>
     <script>
-        let date = new Date("2024-05-08 15:28:24 UTC");
+        let date = new Date("2024-05-08 15:32:20 UTC");
         document.getElementById("info_startDate").innerHTML = date.toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
         document.getElementById("info_startTime").innerHTML = date.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
     </script>
@@ -129,10 +129,10 @@
         ]
 
         const yArray_summary = [
-            9,
-            9,
             3,
-            3
+            0,
+            0,
+            0
         ] // the values will be set in the python script
 
         const layout_summary = {
@@ -173,27 +173,27 @@
     <div class="stats w-full">
         <div class="stat">
             <div class="stat-title">Executed tests</div>
-            <div class="stat-value">24</div>
+            <div class="stat-value">3</div>
             <div class="stat-description">Total number of tests executed</div>
         </div>
         <div class="stat">
             <div class="stat-title">Passed</div>
-            <div class="stat-value">9</div>
+            <div class="stat-value">3</div>
             <div class="stat-description">Number of tests that passed</div>
         </div>
         <div class="stat">
             <div class="stat-title">Failed</div>
-            <div class="stat-value">9</div>
+            <div class="stat-value">0</div>
             <div class="stat-description">Number of tests that failed</div>
         </div>
         <div class="stat">
             <div class="stat-title">Pending</div>
-            <div class="stat-value">3</div>
+            <div class="stat-value">0</div>
             <div class="stat-description">Number of tests that are pending</div>
         </div>
         <div class="stat">
             <div class="stat-title">Skipped</div>
-            <div class="stat-value">3</div>
+            <div class="stat-value">0</div>
             <div class="stat-description">Number of tests that are skipped</div>
         </div>
     </div>
@@ -215,7 +215,7 @@
                 Report generated on <span id="footer_startDate"></span> at <span id="footer_startTime"></span>.
             </p>
             <script>
-                date = new Date("2024-05-08 15:29:05 UTC");
+                date = new Date("2024-05-08 15:33:20 UTC");
                 document.getElementById("footer_startDate").innerHTML = date.toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
                 document.getElementById("footer_startTime").innerHTML = date.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
             </script>

@@ -85,19 +85,19 @@
     <i class="fa-brands fa-apple"></i>
     <span class="ml-2">MACOS</span>
 </div>
-    <span class="ml-2">1 milliseconds</span>
+    <span class="ml-2">2 milliseconds</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-LINUX"></i>
     <span class="ml-2">LINUX</span>
 </div>
-    <span class="ml-2">1 milliseconds</span>
+    <span class="ml-2">2 milliseconds</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-WINDOWS"></i>
     <span class="ml-2">WINDOWS</span>
 </div>
-    <span class="ml-2">1 milliseconds</span>
+    <span class="ml-2">3 milliseconds</span>
 </li>
                 </ul>
             </div>
@@ -123,7 +123,7 @@
         };
 
         var trace_failed = {
-            x: [1, 1, 1],
+            x: [0, 0, 0],
             y: ["macos", "ubuntu", "windows"],
             name: 'Failed',
             orientation: 'h',
@@ -190,7 +190,7 @@
     <div class="stats shadow w-full">
         <div class="stat">
             <div class="stat-title">Executed tests</div>
-            <div class="stat-value">6</div>
+            <div class="stat-value">3</div>
             <div class="stat-description">Total number of tests executed</div>
         </div>
         <div class="stat">
@@ -223,19 +223,19 @@
     <i class="fa-brands fa-apple"></i>
     <span class="ml-2">MACOS</span>
 </div>
-    <span class="ml-2">1</span>
+    <span class="ml-2">0</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-LINUX"></i>
     <span class="ml-2">LINUX</span>
 </div>
-    <span class="ml-2">1</span>
+    <span class="ml-2">0</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-WINDOWS"></i>
     <span class="ml-2">WINDOWS</span>
 </div>
-    <span class="ml-2">1</span>
+    <span class="ml-2">0</span>
 </li></ul></div>
             <div class="stat-description">Number of tests that failed</div>
         </div>
@@ -292,62 +292,6 @@
 <div id="details" class="w-full bg-base-100 rounded-lg m-2 py-2 px-4">
     <div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
     <input type="radio" name="coll" id="{{id}}" class="collapse-open">
-    <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-error w-24 h-6"><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;failed</div>&nbsp;&nbsp;Testing Logger module should log a message</div>
-    <div class="collapse-content">
-        <p id="description" class="text-lg">
-            should log a message
-        </p>
-        <div role="tablist" class="tabs tabs-lifted">
-            <input type="radio" name="tab-spec1" role="tab" class="tab" aria-label="MACOS" checked />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 1 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">/Users/runner/work/server/server/tests/modules/Logger.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="3" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="4" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="5" class=""><code class="language-javascript"> </code></pre><pre data-prefix="6" class=""><code class="language-javascript">     it('should log a message', () => {</code></pre><pre data-prefix="7" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(false).toBe(true);</code></pre><pre data-prefix="8" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="9" class=""><code class="language-javascript"> });</code></pre>
-    </div>
-</div>
-</div><input type="radio" name="tab-spec1" role="tab" class="tab" aria-label="LINUX"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">/home/runner/work/server/server/tests/modules/Logger.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="3" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="4" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="5" class=""><code class="language-javascript"> </code></pre><pre data-prefix="6" class=""><code class="language-javascript">     it('should log a message', () => {</code></pre><pre data-prefix="7" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(false).toBe(true);</code></pre><pre data-prefix="8" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="9" class=""><code class="language-javascript"> });</code></pre>
-    </div>
-</div>
-</div><input type="radio" name="tab-spec1" role="tab" class="tab" aria-label="WINDOWS"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">D:\a\server\server\tests\modules\Logger.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="3" class=""><code class="language-javascript">         expect(true).toBe(true);
-</code></pre><pre data-prefix="4" class=""><code class="language-javascript">     });
-</code></pre><pre data-prefix="5" class=""><code class="language-javascript"> 
-</code></pre><pre data-prefix="6" class=""><code class="language-javascript">     it('should log a message', () => {
-</code></pre><pre data-prefix="7" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(false).toBe(true);
-</code></pre><pre data-prefix="8" class=""><code class="language-javascript">     });
-</code></pre><pre data-prefix="9" class=""><code class="language-javascript"> });</code></pre>
-    </div>
-</div>
-</div>
-        </div>
-    </div>
-</div><div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
-    <input type="radio" name="coll" id="{{id}}" class="collapse-open">
     <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-success w-24 h-6"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;passed</div>&nbsp;&nbsp;Testing Logger module should pass</div>
     <div class="collapse-content">
         <p id="description" class="text-lg">
@@ -363,13 +307,13 @@
 </div><input type="radio" name="tab-spec0" role="tab" class="tab" aria-label="LINUX"  />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 1 milliseconds
+        Ran in 2 milliseconds
     </div>
     No additional information
 </div><input type="radio" name="tab-spec0" role="tab" class="tab" aria-label="WINDOWS"  />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
+        Ran in 2 milliseconds
     </div>
     No additional information
 </div>
