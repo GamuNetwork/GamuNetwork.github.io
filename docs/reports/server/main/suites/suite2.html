@@ -85,19 +85,19 @@
     <i class="fa-brands fa-apple"></i>
     <span class="ml-2">MACOS</span>
 </div>
-    <span class="ml-2">6 milliseconds</span>
+    <span class="ml-2">1 milliseconds</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-LINUX"></i>
     <span class="ml-2">LINUX</span>
 </div>
-    <span class="ml-2">4 milliseconds</span>
+    <span class="ml-2">5 milliseconds</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-WINDOWS"></i>
     <span class="ml-2">WINDOWS</span>
 </div>
-    <span class="ml-2">4 milliseconds</span>
+    <span class="ml-2">10 milliseconds</span>
 </li>
                 </ul>
             </div>
@@ -298,10 +298,99 @@
             should fail
         </p>
         <div role="tablist" class="tabs tabs-lifted">
+            <input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="MACOS" checked />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 1 milliseconds
+    </div>
+    <div class="mockup-browser bg-base-300 my-4">
+    <div class="mockup-browser-toolbar p-2">
+        <div class="input">/Users/runner/work/server/server/tests/test.spec.js</div>
+    </div>
+    <div class="bg-neutral p-4">
+        <pre data-prefix="14" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> </code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);</code></pre>
+    </div>
+</div>
+</div><input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="LINUX"  />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 1 milliseconds
+    </div>
+    <div class="mockup-browser bg-base-300 my-4">
+    <div class="mockup-browser-toolbar p-2">
+        <div class="input">/home/runner/work/server/server/tests/test.spec.js</div>
+    </div>
+    <div class="bg-neutral p-4">
+        <pre data-prefix="14" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> </code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);</code></pre>
+    </div>
+</div>
+</div><input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="WINDOWS"  />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 4 milliseconds
+    </div>
+    <div class="mockup-browser bg-base-300 my-4">
+    <div class="mockup-browser-toolbar p-2">
+        <div class="input">D:\a\server\server\tests\test.spec.js</div>
+    </div>
+    <div class="bg-neutral p-4">
+        <pre data-prefix="14" class=""><code class="language-javascript">     });
+</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {
+</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);
+</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);
+</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);
+</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });
+</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });
+</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> 
+</code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {
+</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);
+</code></pre>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</div><div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
+    <input type="radio" name="coll" id="{{id}}" class="collapse-open">
+    <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-info w-24 h-6"><i class="fa-solid fa-forward"></i>&nbsp;&nbsp;skipped</div>&nbsp;&nbsp;Test should be disabled</div>
+    <div class="collapse-content">
+        <p id="description" class="text-lg">
+            should be disabled
+        </p>
+        <div role="tablist" class="tabs tabs-lifted">
+            <input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="MACOS" checked />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 0 milliseconds
+    </div>
+    This test was manually skipped
+</div><input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="LINUX"  />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 0 milliseconds
+    </div>
+    This test was manually skipped
+</div><input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="WINDOWS"  />
+<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+    <div id="duration" class="badge badge-primary">
+        Ran in 0 milliseconds
+    </div>
+    This test was manually skipped
+</div>
+        </div>
+    </div>
+</div><div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
+    <input type="radio" name="coll" id="{{id}}" class="collapse-open">
+    <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-error w-24 h-6"><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;failed</div>&nbsp;&nbsp;Test should fail</div>
+    <div class="collapse-content">
+        <p id="description" class="text-lg">
+            should fail
+        </p>
+        <div role="tablist" class="tabs tabs-lifted">
             <input type="radio" name="tab-spec3" role="tab" class="tab" aria-label="MACOS" checked />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 2 milliseconds
+        Ran in 0 milliseconds
     </div>
     <div class="mockup-browser bg-base-300 my-4">
     <div class="mockup-browser-toolbar p-2">
@@ -314,7 +403,7 @@
 </div><input type="radio" name="tab-spec3" role="tab" class="tab" aria-label="LINUX"  />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 2 milliseconds
+        Ran in 0 milliseconds
     </div>
     <div class="mockup-browser bg-base-300 my-4">
     <div class="mockup-browser-toolbar p-2">
@@ -373,38 +462,9 @@
 </div><input type="radio" name="tab-spec4" role="tab" class="tab" aria-label="WINDOWS"  />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 1 milliseconds
+        Ran in 0 milliseconds
     </div>
     {<PLATFORM.MACOS: 'macos'>: 'this is a pending test', <PLATFORM.LINUX: 'ubuntu'>: 'this is a pending test', <PLATFORM.WINDOWS: 'windows'>: 'this is a pending test'}
-</div>
-        </div>
-    </div>
-</div><div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
-    <input type="radio" name="coll" id="{{id}}" class="collapse-open">
-    <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-info w-24 h-6"><i class="fa-solid fa-forward"></i>&nbsp;&nbsp;skipped</div>&nbsp;&nbsp;Test should be disabled</div>
-    <div class="collapse-content">
-        <p id="description" class="text-lg">
-            should be disabled
-        </p>
-        <div role="tablist" class="tabs tabs-lifted">
-            <input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="MACOS" checked />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    This test was manually skipped
-</div><input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="LINUX"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    This test was manually skipped
-</div><input type="radio" name="tab-spec5" role="tab" class="tab" aria-label="WINDOWS"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    This test was manually skipped
 </div>
         </div>
     </div>
@@ -425,7 +485,7 @@
 </div><input type="radio" name="tab-spec2" role="tab" class="tab" aria-label="LINUX"  />
 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
     <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
+        Ran in 1 milliseconds
     </div>
     No additional information
 </div><input type="radio" name="tab-spec2" role="tab" class="tab" aria-label="WINDOWS"  />
@@ -434,66 +494,6 @@
         Ran in 0 milliseconds
     </div>
     No additional information
-</div>
-        </div>
-    </div>
-</div><div class="collapse collapse-plus bg-base-200 rounded-lg my-2 w-full">
-    <input type="radio" name="coll" id="{{id}}" class="collapse-open">
-    <div class="collapse-title text-xl font-bold"><div class="badge badge-outline badge-error w-24 h-6"><i class="fa-solid fa-xmark"></i>&nbsp;&nbsp;failed</div>&nbsp;&nbsp;Test should fail</div>
-    <div class="collapse-content">
-        <p id="description" class="text-lg">
-            should fail
-        </p>
-        <div role="tablist" class="tabs tabs-lifted">
-            <input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="MACOS" checked />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 0 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">/Users/runner/work/server/server/tests/test.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="14" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> </code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);</code></pre>
-    </div>
-</div>
-</div><input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="LINUX"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 1 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">/home/runner/work/server/server/tests/test.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="14" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> </code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);</code></pre>
-    </div>
-</div>
-</div><input type="radio" name="tab-spec6" role="tab" class="tab" aria-label="WINDOWS"  />
-<div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-    <div id="duration" class="badge badge-primary">
-        Ran in 1 milliseconds
-    </div>
-    <div class="mockup-browser bg-base-300 my-4">
-    <div class="mockup-browser-toolbar p-2">
-        <div class="input">D:\a\server\server\tests\test.spec.js</div>
-    </div>
-    <div class="bg-neutral p-4">
-        <pre data-prefix="14" class=""><code class="language-javascript">     });
-</code></pre><pre data-prefix="15" class=""><code class="language-javascript">     it('should fail', () => {
-</code></pre><pre data-prefix="16" class=""><code class="language-javascript">         expect(true).toBe(true);
-</code></pre><pre data-prefix="17" class=""><code class="language-javascript">         expect(false).toBe(false);
-</code></pre><pre data-prefix="18" class="bg-base-content text-accent-content"><code class="language-javascript">         expect(1).toBe(2);
-</code></pre><pre data-prefix="19" class=""><code class="language-javascript">     });
-</code></pre><pre data-prefix="20" class=""><code class="language-javascript"> });
-</code></pre><pre data-prefix="21" class=""><code class="language-javascript"> 
-</code></pre><pre data-prefix="22" class=""><code class="language-javascript"> it('should be a top-level test', () => {
-</code></pre><pre data-prefix="23" class=""><code class="language-javascript">     expect(true).toBe(true);
-</code></pre>
-    </div>
-</div>
 </div>
         </div>
     </div>
