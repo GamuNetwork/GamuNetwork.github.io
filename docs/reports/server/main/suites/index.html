@@ -76,20 +76,20 @@
                         <ul>
                             <li>
     <div class="badge badge-outline badge-accent w-32 h-6">
+    <i class="fa-brands fa-WINDOWS"></i>
+    <span class="ml-2">WINDOWS</span>
+</div>
+    <span class="ml-2">3 milliseconds</span>
+</li><li>
+    <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-apple"></i>
     <span class="ml-2">MACOS</span>
 </div>
-    <span class="ml-2">2 milliseconds</span>
+    <span class="ml-2">1 milliseconds</span>
 </li><li>
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-LINUX"></i>
     <span class="ml-2">LINUX</span>
-</div>
-    <span class="ml-2">2 milliseconds</span>
-</li><li>
-    <div class="badge badge-outline badge-accent w-32 h-6">
-    <i class="fa-brands fa-WINDOWS"></i>
-    <span class="ml-2">WINDOWS</span>
 </div>
     <span class="ml-2">3 milliseconds</span>
 </li>
@@ -106,7 +106,7 @@
     <script type="text/javascript">
         var trace_passed = {
             x: [1, 1, 1],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Passed',
             orientation: 'h',
             marker: {
@@ -118,7 +118,7 @@
 
         var trace_failed = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Failed',
             orientation: 'h',
             marker: {
@@ -130,7 +130,7 @@
 
         var trace_pending = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Pending',
             orientation: 'h',
             marker: {
@@ -142,7 +142,7 @@
 
         var trace_skipped = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Skipped',
             orientation: 'h',
             marker: {
@@ -196,6 +196,12 @@
                         <ul>
                             <li>
     <div class="badge badge-outline badge-accent w-32 h-6">
+    <i class="fa-brands fa-WINDOWS"></i>
+    <span class="ml-2">WINDOWS</span>
+</div>
+    <span class="ml-2">0 milliseconds</span>
+</li><li>
+    <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-apple"></i>
     <span class="ml-2">MACOS</span>
 </div>
@@ -204,12 +210,6 @@
     <div class="badge badge-outline badge-accent w-32 h-6">
     <i class="fa-brands fa-LINUX"></i>
     <span class="ml-2">LINUX</span>
-</div>
-    <span class="ml-2">0 milliseconds</span>
-</li><li>
-    <div class="badge badge-outline badge-accent w-32 h-6">
-    <i class="fa-brands fa-WINDOWS"></i>
-    <span class="ml-2">WINDOWS</span>
 </div>
     <span class="ml-2">0 milliseconds</span>
 </li>
@@ -226,7 +226,7 @@
     <script type="text/javascript">
         var trace_passed = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Passed',
             orientation: 'h',
             marker: {
@@ -238,7 +238,7 @@
 
         var trace_failed = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Failed',
             orientation: 'h',
             marker: {
@@ -250,7 +250,7 @@
 
         var trace_pending = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Pending',
             orientation: 'h',
             marker: {
@@ -262,7 +262,7 @@
 
         var trace_skipped = {
             x: [0, 0, 0],
-            y: ["macos", "ubuntu", "windows"],
+            y: ["windows", "macos", "ubuntu"],
             name: 'Skipped',
             orientation: 'h',
             marker: {
@@ -321,7 +321,7 @@
                 Report generated on <span id="footer_startDate"></span> at <span id="footer_startTime"></span>.
             </p>
             <script>
-                date = new Date("2024-05-26 13:35:26 ");
+                date = new Date("2024-07-02 16:45:15 ");
                 document.getElementById("footer_startDate").innerHTML = date.toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
                 document.getElementById("footer_startTime").innerHTML = date.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
             </script>
