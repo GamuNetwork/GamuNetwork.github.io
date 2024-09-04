@@ -1,0 +1,226 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+    <title>Tests results</title>
+    <!-- tailwind & daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- syntax highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>hljs.highlightAll();</script>
+    <style>
+        .hljs{
+            background-color: oklch(var(--n));
+            color: #d8dee9;
+            display: contents !important;
+        }
+
+        .hljs-comment, .hljs-quote {
+            color: #7f848e;
+        }
+
+        .hljs-keyword, .hljs-selector-tag, .hljs-subst {
+            color: #c792ea;
+        }
+
+        .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr, .hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-link {
+            color: #f78c6c;
+        }
+
+        .hljs-string, .hljs-symbol, .hljs-bullet, .hljs-built_in, .hljs-builtin-name, .hljs-addition {
+            color: #c3e88d;
+        }
+
+        .hljs-title, .hljs-section {
+            color: #ffcb6b;
+        }
+
+        .hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-title, .hljs-section, .hljs-doctag, .hljs-type, .hljs-name, .hljs-strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-5 bg-base-200 h-fit justify-between">
+        <div class="navbar rounded-lg bg-base-100 shadow-lg bg-opacity-60 backdrop-blur-md">
+    <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="./index.html">Home</a>
+        <a class="btn btn-ghost text-xl" href="./suites/index.html">Suites List</a>
+        <a class="btn btn-ghost text-xl" href="./specs/index.html">Specs List</a>
+    </div>
+</div>
+        <div class="p-5 h-fit">
+            <div class="flex flex-row place-content-center">
+    <div id="left" class="w-1/2 mr-2">
+        <div id="mainInfo" class="w-1/2 w-full m-2 shadow-lg bg-opacity-60 backdrop-blur-md">
+    <div class="stats stats-vertical shadow w-full">
+        <div class="stat">
+            <div class="stat-title">Program</div>
+            <div class="stat-value">gamu</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Version</div>
+            <div class="stat-value">1.0.0</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Tests started on</div>
+            <div class="stat-value" id="info_startDate"></div>
+            <div class="stat-title">at</div>
+            <div class="stat-value" id="info_startTime"></div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Tests duration</div>
+            <div class="stat-value">3 milliseconds</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Platforms used</div>
+            <div class="stat-value">
+                <div class="flex flex-wrap">
+                    <!-- it's not angular, only {{variable}} is avaliable-->
+<div class="shadow-lg bg-opacity-60 bg-base-200 rounded-lg text-center aspect-w-1 aspect-h-1 m-2 p-2">
+    <i class="fa-brands fa-apple"></i>
+    <h3 class="text-lg font-bold">
+        MACOS
+    </h3>
+</div><!-- it's not angular, only {{variable}} is avaliable-->
+<div class="shadow-lg bg-opacity-60 bg-base-200 rounded-lg text-center aspect-w-1 aspect-h-1 m-2 p-2">
+    <i class="fa-brands fa-WINDOWS"></i>
+    <h3 class="text-lg font-bold">
+        WINDOWS
+    </h3>
+</div><!-- it's not angular, only {{variable}} is avaliable-->
+<div class="shadow-lg bg-opacity-60 bg-base-200 rounded-lg text-center aspect-w-1 aspect-h-1 m-2 p-2">
+    <i class="fa-brands fa-LINUX"></i>
+    <h3 class="text-lg font-bold">
+        LINUX
+    </h3>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let date = new Date("2024-09-04 16:49:48 UTC");
+        document.getElementById("info_startDate").innerHTML = date.toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
+        document.getElementById("info_startTime").innerHTML = date.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+    </script>
+</div>
+    </div>
+    <div id="right" class="w-1/2 ml-2 h-fit">
+        <div id = "summary" class="h-1/2 min-h-80 bg-base-100 rounded-lg m-2 shadow-lg bg-opacity-60 backdrop-blur-md">
+    <h1 class="text-left p-5 text-2xl absolute font-bold po">Summary</h1>
+    <div id="summaryPie_summary" class="h-1/2 min-h-80"></div>
+    <script type="text/javascript">
+        const xArray_summary = [
+            "passed",
+            "failed",
+            "pending",
+            "skipped"
+        ]
+
+        const yArray_summary = [
+            3,
+            0,
+            0,
+            0
+        ] // the values will be set in the python script
+
+        const layout_summary = {
+            
+            paper_bgcolor: 'transparent',
+            font: {color: 'white'}, 
+            colorway: ['#009900', '#BB0000', '#CC9900', '#000099'],
+            margin: {"t": 20, "b": 20, "l": 0, "r": 0}
+        }
+
+        const data_summary = [
+            {
+                labels: xArray_summary,
+                values: yArray_summary,
+                type: 'pie',
+                textposition: 'outside',
+                automargin: true,
+                hole: 0.5,
+                textinfo: 'percent',
+                hoverinfo: 'label+percent',
+                marker: {
+                    line: {
+                        color: 'white',
+                        width: 0.5
+                    }
+                }
+            }
+        ]
+        
+        const config_summary = {responsive: true}
+
+        Plotly.newPlot('summaryPie_summary', data_summary, layout_summary, config_summary)
+    </script>
+</div>
+
+        <div id="details" class="h-1/2 bg-base-100 rounded-lg m-2 shadow-lg bg-opacity-60 backdrop-blur-md pb-2">
+    <h1 class="text-left p-5 text-2xl font-bold po">Details</h1>
+    <div class="stats w-full">
+        <div class="stat">
+            <div class="stat-title">Executed tests</div>
+            <div class="stat-value">3</div>
+            <div class="stat-description">Total number of tests executed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Passed</div>
+            <div class="stat-value">3</div>
+            <div class="stat-description">Number of tests that passed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Failed</div>
+            <div class="stat-value">0</div>
+            <div class="stat-description">Number of tests that failed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Pending</div>
+            <div class="stat-value">0</div>
+            <div class="stat-description">Number of tests that are pending</div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Skipped</div>
+            <div class="stat-value">0</div>
+            <div class="stat-description">Number of tests that are skipped</div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+        </div>
+        <footer class="bg-white rounded-lg m-4 dark:bg-gray-800 h-20 shadow-lg bg-opacity-60 backdrop-blur-md">
+    <div class="flex flex-col items-center justify-center p-4">
+        <div class="flex flex-col items-center justify-center">
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                This report was generated by a custom test reporter.
+                The reporter was made by <a href="https://github.com/T0ine34" class="text-blue-500">Antoine Buirey</a>.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                The source code is available on <a href="https://github.com/GamuNetwork/devtools/tree/main/tests-exporter" class="text-blue-500">GitHub</a>.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Report generated on <span id="footer_startDate"></span> at <span id="footer_startTime"></span>.
+            </p>
+            <script>
+                date = new Date("2024-09-04 16:50:43 UTC");
+                document.getElementById("footer_startDate").innerHTML = date.toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
+                document.getElementById("footer_startTime").innerHTML = date.toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+            </script>
+        </div>
+    </div>
+</footer>
+    </div>
+</html>
